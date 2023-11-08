@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackgroundBeGone</title>
+    <link rel="stylesheet" href="extimg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="icon" href="icon1.png">
+    <script src="extimg.js" defer></script>
+</head>
+<body>
+
+    <div class="title">
+        <h1 id="website-name">Extract Background</h1><br>
+        <h3 id="tagline"><marquee behavior="alternate">Intricate Image editing software and greet simplicity with our state of the art technolgy that<br> enables you to effortlessly craft imprensive, professional grade images</marquee></h3>
+    </div>
+
+<div class="body">
+
+    
+    <div class="form">
+       
+        
+        
+        <div class="buttons">
+            <button type="button" id="uploadButton" onclick="uploadFunction()">UPLOAD</button><hr>
+            <button type="button" id="downloadButton" onclick="downloadImage()">DOWNLOAD IMAGE</button>
+        </div>
+        <div class="input">     
+            <input type="file" accept="image/gif, image/jpeg, image/png" onchange="getImagePreview(event)" id="inputFile" class="upload-box">
+         </div>       
+    </div>
+</div>
+  
+    <div class="overlay" id="overlay">
+        <button id="closePreview" onclick="closePreview()">X</button>
+        <h3 id="select">Image selected:</h3>
+        <h3 id="processed">Here's your final image!</h3>
+        <div class="selectedImage" id="selectedImage"></div>
+        <div class="preview" id="preview">
+            
+        </div>
+    </div>
+    
+</body>
+</html>
